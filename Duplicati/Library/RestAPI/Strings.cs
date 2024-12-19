@@ -48,6 +48,7 @@ Error message: {0}", error); }
                 public static string TempdirLong { get { return LC.L(@"Use this option to supply an alternative folder for temporary storage. By default the system default temporary folder is used. Note that also SQLite will put temporary files in this temporary folder."); } }
                 public static string TempdirShort { get { return LC.L(@"Temporary storage folder"); } }
                 public static string WebserverResetJwtConfigDescription { get { return LC.L(@"Reset the JWT configuration, invalidating any issued login tokens"); } }
+                public static string WebserverEnableForeverTokenDescription { get { return LC.L(@"Enable the use of long-lived access tokens"); } }
                 public static string WebserverDisableVisualCaptchaDescription { get { return LC.L(@"Disable the visual captcha"); } }
                 public static string WebserverApiOnlyDescription { get { return LC.L(@"Disable the web interface and only allow API access"); } }
                 public static string WebserverDisableSigninTokensDescription { get { return LC.L(@"Disable the use of signin tokens"); } }
@@ -73,6 +74,7 @@ Error message: {0}", error); }
                 public static string InvalidTimezone(string timezone) { return LC.L(@"The timezone {0} is not valid", timezone); }
                 public static string SettingsencryptionkeyShort { get { return LC.L(@"Set the encryption key for the settings database"); } }
                 public static string SettingsencryptionkeyLong(string envname) { return LC.L(@"Use this option to set the encryption key for the settings database. This option can also be set with the environment variable {0}.", envname); }
+                public static string InvalidPauseResumeState(LiveControls.LiveControlState state) { return LC.L(@"Invalid pause/resume state: {0}", state); }
         }
         internal static class Scheduler
         {
